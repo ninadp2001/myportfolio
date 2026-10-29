@@ -14,9 +14,9 @@ function Work() {
 
 
       <div className="work-list">
-        <a href="https://project-link.com" target="_blank" rel="noopener noreferrer" className="work-item">
+        <div className="work-item">
           <div className="work-image">
-              <img src={projectApprovalImg} alt="Project Approval System" />          
+              <img src={projectApprovalImg} alt="Student Project Management System" />          
           </div>
 
           <div className="work-content">
@@ -36,7 +36,7 @@ function Work() {
               <span>JAVA</span>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Repeat work-item for other projects */}
 
@@ -44,9 +44,9 @@ function Work() {
 
       <div className="work-list">
 
-        <a href="https://project-link.com" target="_blank" rel="noopener noreferrer" className="work-item">
+        <div className="work-item">
           <div className="work-image">
-              <img src={turfBookingImg} alt="Project Approval System" />          
+              <img src={turfBookingImg} alt="Turf Booking System" />          
           </div>
 
           <div className="work-content">
@@ -66,7 +66,7 @@ function Work() {
               <span>Bootstrap</span>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Repeat work-item for other projects */}
 
@@ -74,9 +74,9 @@ function Work() {
 
       <div className="work-list">
 
-        <a href="https://project-link.com" target="_blank" rel="noopener noreferrer" className="work-item">
+        <div className="work-item">
           <div className="work-image">
-              <img src={invoice_generatorImg} alt="Project Approval System" />          
+              <img src={invoice_generatorImg} alt="Invoice Generator" />          
           </div>
 
           <div className="work-content">
@@ -98,7 +98,7 @@ function Work() {
 
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Repeat work-item for other projects */}
 
@@ -106,9 +106,9 @@ function Work() {
 
       <div className="work-list">
 
-        <a href="https://project-link.com" target="_blank" rel="noopener noreferrer" className="work-item">
+        <div className="work-item">
           <div className="work-image">
-              <img src={carpoolImg} alt="Car Pool" />          
+              <img src={carpoolImg} alt="Car Pool System" />          
           </div>
 
           <div className="work-content">
@@ -128,7 +128,7 @@ function Work() {
               <span>Javascript</span>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Repeat work-item for other projects */}
 

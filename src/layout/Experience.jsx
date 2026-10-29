@@ -39,7 +39,7 @@ function Experience() {
             <h3 className="experience-role">
               Jr. PHP Developer
             </h3>
-            <span className="experience-org">Quest Soltions</span>
+            <span className="experience-org">Quest Solutions</span>
           </div>
 
           <ul className="experience-description">

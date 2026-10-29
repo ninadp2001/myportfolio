@@ -18,8 +18,8 @@ function TechStack() {
     { name: "Python", logo: python },
     { name: "Git", logo: git },
     { name: "Postman", logo: postman },
-    { name: "REST APIs", logo: wordpress },
-    { name: "WordPress", logo: rest },
+    { name: "REST APIs", logo: rest },
+    { name: "WordPress", logo: wordpress },
     { name: "PHP", logo: php },
   ];
 

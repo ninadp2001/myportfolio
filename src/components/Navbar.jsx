@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { scrollToSection } from "../utils/scrollToSection";
 
+const MENU = [
+  { id: "about", index: "01" },
+  { id: "experience", index: "02" },
+  { id: "work", index: "03" },
+  { id: "expertise", index: "04" },
+  { id: "contact", index: "05" },
+];
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -18,48 +26,35 @@ function Navbar() {
 
       {/* Desktop links */}
       <ul className="nav-links">
-        <li onClick={() => handleNav("about")}>
-          <span className="nav-item">
-            <span className="nav-index">01</span>
-            <span className="nav-text">// about</span>
-          </span>
-        </li>
-        <li onClick={() => handleNav("expertise")}>
-          <span className="nav-item">
-            <span className="nav-index">02</span>
-            <span className="nav-text">// expertise</span>
-          </span>
-        </li>
-        <li onClick={() => handleNav("experience")}>
-          <span className="nav-item">
-            <span className="nav-index">04</span>
-            <span className="nav-text">// experience</span>
-          </span>
-        </li>
-        <li onClick={() => handleNav("work")}>
-          <span className="nav-item">
-            <span className="nav-index">03</span>
-            <span className="nav-text">// work</span>
-          </span>
-        </li>
-        <li onClick={() => handleNav("contact")}>
-          <span className="nav-item">
-            <span className="nav-index">05</span>
-            <span className="nav-text">// contact</span>
-          </span>
-        </li>
+        {MENU.map(({ id, index }) => (
+          <li key={id}>
+            <a
+              href={`#${id}`}
+              className="nav-item"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav(id);
+              }}
+            >
+              <span className="nav-index">{index}</span>
+              <span className="nav-text">// {id}</span>
+            </a>
+          </li>
+        ))}
       </ul>
 
       {/* Mobile hamburger */}
-      <div
+      <button
+        type="button"
         className="nav-hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
       >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </nav>
   );
 }

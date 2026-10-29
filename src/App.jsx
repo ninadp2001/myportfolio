@@ -1,38 +1,4 @@
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import TechStack from "./components/TechStack";
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Hero>
-//         <TechStack />
-//       </Hero>
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-
-// import Hero from "./components/Hero";
-// import MainLayout from "./layout/MainLayout";
-
-// function App() {
-//   return (
-//     <>
-//       <Hero />
-//       <MainLayout />
-//     </>
-//   );
-// }
-
-// export default App;
-
-
-import Navbar from "./components/Navbar";
+import CursorGlow from "./components/CursorGlow";
 import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
 import MainLayout from "./layout/MainLayout";
@@ -41,6 +7,8 @@ import Contact from "./layout/Contact";
 function App() {
   return (
     <>
+      <CursorGlow />
+
       <Hero>
         <TechStack />
       </Hero>
@@ -53,5 +21,3 @@ function App() {
 }
 
 export default App;
-
-

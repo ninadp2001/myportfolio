@@ -1,5 +1,3 @@
-import profileImg from "../assets/profile.png"; // change to your image
-
 function Contact() {
   return (
     <section className="contact-page" id="contact">
@@ -7,30 +5,18 @@ function Contact() {
 
         {/* LEFT */}
         <div className="contact-left">
-          <span className="contact-hello">HELLO, I'M</span>
+          <span className="contact-hello">WHAT’S NEXT</span>
 
           <div className="left-name">
-            Ninad Patil<span className="dot">.</span>
-          </div>
-
-          <div className="left-role">
-            Software Developer | Java • Backend • SQL • APIs
+            Get In Touch
           </div>
 
 
           <div className="contact-desc">
 
             <p>
-              Backend Developer and Java Developer skilled in Java, Spring Boot, REST APIs,
-              MySQL, SQL queries, JDBC, OOP, collections, and exception handling. Strong
-              experience in backend logic, API development, debugging, database design, and
-              application support.
-            </p>
-
-            <p>
-              Worked on CRM backend modules, API integrations, lead flow automation, and
-              dashboard logic where I handled data processing, MySQL operations, and backend
-              feature development.
+              I’m open to backend and Java roles working with Java, Spring Boot, REST APIs,
+              MySQL, SQL and JDBC. If my experience fits what you need, let’s talk.
             </p>
 
             <div className="contact-roles">
@@ -53,7 +39,7 @@ function Contact() {
 
 
           <div className="contact-buttons">
-            <a href="/resume.pdf" className="btn primary" target="_blank">
+            <a href={`${import.meta.env.BASE_URL}Ninad_Patil_Resume.pdf`} className="btn primary" target="_blank" rel="noreferrer">
               Download Resume
             </a>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ninadp2001@gmail.com&su=Job%20Opportunity&body=Hi%20Ninad,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0AThanks" target="_blank" rel="noreferrer" className="btn outline">
@@ -88,13 +74,6 @@ function Contact() {
           <a href="https://wa.me/919869979696" target="_blank" rel="noreferrer" aria-label="WhatsApp">
             <svg viewBox="0 0 32 32" className="social-icon">
               <path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2.1 7.8L.5 31.5l7.9-2.1c2.3 1.2 5 1.9 7.6 1.9 8.6 0 15.5-6.9 15.5-15.5C31.5 7.4 24.6.5 16 .5zm0 28.3c-2.3 0-4.5-.6-6.5-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5A12.7 12.7 0 1 1 28.7 16 12.7 12.7 0 0 1 16 28.8zm6.7-9.3c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.3-2-1.2-1.1-2-2.5-2.2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.3-.4.4-.6.1-.2 0-.4 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/>
-            </svg>
-          </a>
-
-          {/* Naukri */}
-          <a href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noreferrer" aria-label="Naukri">
-            <svg viewBox="0 0 24 24" className="social-icon">
-              <text x="2" y="18" fontSize="16" fontWeight="700">N</text>
             </svg>
           </a>
 
